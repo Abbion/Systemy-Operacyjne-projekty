@@ -6,9 +6,13 @@ wówczas przebywać sam w czytelni; W zadaniu tym może wystąpić tzw. zjawisko
 grup procesów. Występuje ono wówczas, gdy proces nie zostaje wznowiony, mimo że zdarzenie, na
 które czeka występuje dowolną ilość razy. Za każdym razem, gdy proces ten mógłby być wznowiony,
 wybierany jest jakiś inny oczekujący proces.
+
 Rozważ 2 rozwiązania problemu czytelników i pisarzy:
+
 • Rozwiązanie z możliwością zagłodzenia pisarzy – priorytet czytelnika;
+
 • Rozwiązanie z możliwością zagłodzenia czytelników – priorytet pisarza;
+
 Rozwiązać zadanie w 2 wersjach przy pomocy semaforów. Przyjąć, że liczba miejsc w czytelni jest
 ograniczona i ustalona na pewną wartość M. Liczba czytelników oraz pisarzy może być zarówno większa
 jak i mniejsza od M. Napisać program do generowania procesów czytelników i pisarzy w oparciu o
@@ -21,8 +25,13 @@ momencie i w przypadku, kiedy limit jest większy lub równy liczbie tworzonych 
 zadanie.
 
 Przykładowe wywołanie „powielacza”.
+
 ./program_główny liczba_p liczba_c liczba_m
+
 gdzie, liczba_p - liczba pisarzy,
+
 liczba_c - liczba czytelników,
+
 liczba_m - liczba miejsc w czytelni.
+
 []$ ./prog 2 5 3
