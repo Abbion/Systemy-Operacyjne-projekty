@@ -19,9 +19,14 @@ zaprogramować obsługę błędów w oparciu o funkcję perror() i zmienną errn
 Program główny sprawdza dopuszczalny limit procesów, które może użytkownik uruchomić w danym
 momencie i w przypadku, kiedy limit jest większy lub równy liczbie tworzonych procesów, uruchamia
 zadanie.
+
 Przykładowe wywołanie „powielacza”.
+
 ./program_główny liczba_p liczba_c liczba_m
 gdzie, liczba_p - liczba pisarzy,
+
 liczba_c - liczba czytelników,
+
 liczba_m - liczba miejsc w czytelni.
+
 []$ ./prog 2 5 3
